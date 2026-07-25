@@ -2,8 +2,9 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Github, ExternalLink, CheckCircle, BarChart2 } from "lucide-react";
+import { X, ExternalLink, CheckCircle, BarChart2 } from "lucide-react";
 import { Project } from "@/data/portfolio";
+import { GithubIcon } from "@/components/ui/SocialIcons";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -116,7 +117,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-xl glass-card text-slate-200 hover:text-emerald-400 hover:border-emerald-500/50 text-sm font-semibold flex items-center gap-2"
               >
-                <Github className="w-4 h-4" />
+                <GithubIcon className="w-4 h-4" />
                 <span>View Source Code</span>
               </a>
 

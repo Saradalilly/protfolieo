@@ -2,8 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, Terminal, MapPin, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Download, Mail, Sparkles, Terminal, MapPin, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
+import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 
 export function HeroSection() {
   const { personal } = PORTFOLIO_DATA;
@@ -111,7 +112,7 @@ export function HeroSection() {
                 rel="noopener noreferrer"
                 className="px-6 py-3.5 rounded-xl glass-card border-slate-700/40 hover:border-emerald-500/50 text-slate-800 dark:text-slate-200 font-semibold text-sm hover:text-emerald-400 transition-all duration-200 flex items-center gap-2 shadow-sm"
               >
-                <Github className="w-4 h-4" />
+                <GithubIcon className="w-4 h-4" />
                 <span>GitHub Profile</span>
               </a>
 
@@ -122,7 +123,7 @@ export function HeroSection() {
                 aria-label="LinkedIn"
                 className="p-3.5 rounded-xl glass-card text-slate-700 dark:text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 transition-all duration-200"
               >
-                <Linkedin className="w-5 h-5" />
+                <LinkedinIcon className="w-5 h-5" />
               </a>
 
               <a
